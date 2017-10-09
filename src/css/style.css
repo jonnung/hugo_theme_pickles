@@ -1,3 +1,7 @@
+/* Custom fonts */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
 /* foundation */
 @import "foundation/variable/breakpoint.css";
 @import "foundation/variable/color.css";

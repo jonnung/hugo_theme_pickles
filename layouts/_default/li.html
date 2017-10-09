@@ -2,9 +2,9 @@
   <header>
     <h2 class="c-title c-article__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p class="c-article__meta">
-      Posted on
+      작성일:   
       <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-        {{ .Date.Format "Jan 2, 2006" }}
+        {{ .Date.Format "2006-01-02" }}
       </time>
     </p>
   </header>
@@ -12,6 +12,6 @@
     {{ .Summary | plainify | safeHTML }}
   </div>
   {{ if .Truncated }}
-  <a href="{{ .Permalink }}" class="c-article__btn p-list-article__btn">Read more</a></li>
+  <a href="{{ .Permalink }}" class="c-article__btn p-list-article__btn">더보기</a></li>
   {{ end }}
 </article>

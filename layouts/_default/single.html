@@ -5,9 +5,9 @@
     <h1>{{ .Title }}</h1>
     <div>
       <div class="c-time">
-        Posted on
+        작성일: 
         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-          {{ .Date.Format "Jan 2, 2006" }}
+          {{ .Date.Format "2006-01-02" }}
         </time>
       </div>
       {{ range .Params.tags }}
@@ -39,13 +39,13 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           {{ if .Prev }}
-          <a href="{{ .Prev.Permalink }}">Newer</a>
+          <a href="{{ .Prev.Permalink }}">다음글 보기</a>
           {{ else }}
           {{ end }}
         </div>
         <div class="c-pagination__older">
           {{ if .Next }}
-          <a href="{{ .Next.Permalink }}">Older</a>
+          <a href="{{ .Next.Permalink }}">이전글 보기</a>
           {{ else }}
           {{ end }}
         </div>
