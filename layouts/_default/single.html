@@ -18,6 +18,9 @@
   {{ with .Params.thumbnail }}
     <img src="{{ . }}" alt="thumbnail" class="p-article__thumbnail">
   {{ end }}
+  <aside>
+    {{ .TableOfContents }}
+  </aside>
   <section id="js-article" class="p-article__body">
     {{ .Content }}
   </section>
